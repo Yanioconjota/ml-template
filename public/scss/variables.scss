@@ -3,7 +3,7 @@ $greenapple : #8ede4d;
 $cyan: #5cd0fe;
 $lightblue: #53aeff;
 $shipcove: #7b80a1;
-$sunflower: #FDB913;
+$sunflower: #eac926;
 $aqua: #38d8ae;
 $purple: #6a82f5;
 $indigo: #4da8f9;
@@ -15,10 +15,10 @@ $orange: #e6612c;
 $success: #48ce65;
 $danger: #e72323;
 $info: #237fe7;
-$primary: #5936ce;
-$default: $primary;
-$input-group-addon-bg: $default;
-$input-border-color: $default;
+$primary: #3483fa;
+$default: $shipcove;
+// $input-group-addon-bg: $default;
+// $input-border-color: $default;
 
 $grid-gutter-width: 20px !default;
 
@@ -35,8 +35,6 @@ $font-light: 'OpenSans-Light';
 $font-semibold: 'OpenSans-Semibold';
 $font-semibold-italic: 'OpenSans-Semibolditalic';
 $font-light-italic: 'OpenSansLight-Italic';
-$font-brand: 'LeagueGothic-CondensedRegular';
-$bub: 'bub';
 
 //Custom colors
 $clear: transparent;
@@ -90,7 +88,4 @@ $theme-colors: map-merge(("primary": $primary,
     "teal": $teal,
     "blue": $blue), $theme-colors);
 //stylelint-enable
-
-//Custom sizes
-$menu-mobile: 250px;
 

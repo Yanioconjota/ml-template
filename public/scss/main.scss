@@ -9,9 +9,8 @@ html,body {
   height: 100%;
 }
 body {
-  margin-top: 5rem;
+  margin-top: 8rem;
   font-family: $font;
-  background-color: $black;
   color: $white;
 }
 
@@ -53,29 +52,28 @@ i {
   right: 0;
 }
 
-.login-screen {
-  @extend .d-flex;
-  @extend .justify-content-center;
-  margin: auto;
-  margin-top: 5%;
-  .form-group {
-    @extend .mb-3;
-  }
-  .message.invalid-feedback {
-    margin-bottom: 0.5em;
-  }
-}
-
 .navbar {
   @extend .navbar-expand-lg;
   @extend .fixed-top;
-  @extend .navbar-dark;
-  @extend .bg-black;
+  @extend .navbar-light;
+  @extend .bg-sunflower;
   @extend .mb-4;
+  .navbar-top {
+    @extend .d-flex;
+    @extend .w-100;
+    .navbar-nav.right {
+      @extend .ml-auto;
+    }
+  }
+  .navbar-bottom {
+    @extend .w-100;
+  }
+  .menu-link {
+    color: $black;
+  }
   .navbar-nav {
     &.mr-auto {
       @include media-breakpoint-up(lg) {
-        border-left: 1px solid $pink;
         .nav-link {
           padding-left: 20px;
           padding-right: 20px;
@@ -83,14 +81,16 @@ i {
       }
     }
     .nav-link {
-      color: $white;
-      text-transform: uppercase;
       padding-left: 20px;
       padding-right: 20px;
     }
   }
   .navbar-brand {
-    font-family: $font-brand;
+    img {
+      display: flex;
+      height: 30px;
+
+    }
     font-size: 35px;
     letter-spacing: 1.5px;
   }
@@ -145,7 +145,6 @@ i {
   @include border-radius(0);
   min-height: 255px;
   margin-bottom: 2rem;
-  border-color: $pink;
   .card-img {
     @include background(center, no-repeat, cover);
     @include border-radius(0);

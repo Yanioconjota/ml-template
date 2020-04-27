@@ -8,14 +8,13 @@ var connectLivereload = require("connect-livereload");
 const livereload = require('livereload');
 
 var indexRouter = require('./routes/index');
-var registroRouter = require('./routes/registro');
 var usersRouter = require('./routes/users');
-var homeRouter = require('./routes/home');
 
 var app = express();
 app.use(connectLivereload());
 
 app.use('/assets', [
+  express.static(__dirname + '/public'),
   express.static(__dirname + '/build/js'),
   express.static(__dirname + '/node_modules/jquery/dist/'),
   express.static(__dirname + '/node_modules/bootstrap/dist/js/')
@@ -41,9 +40,7 @@ liveReloadServer.server.once("connection", () => {
 
 
 app.use('/', indexRouter);
-app.use('/registro', registroRouter);
 app.use('/users', usersRouter);
-app.use('/home', homeRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
