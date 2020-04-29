@@ -5,25 +5,29 @@
       "nombre": "Cafetera Molinex",
       "categoria": "Electrodomésticos",
       "precio": 6770,
-      "descuento": 40
+      "descuento": 40,
+      "imagen": "assets/img/products/img-cafetera-moulinex.jpg"
     },
     {
       "nombre": "Macbook Pro 2019",
       "categoria": "Computadoras",
       "precio": 6770,
-      "descuento": 40
+      "descuento": 40,
+      "imagen": "assets/img/products/img-macbook-pro-2019.jpg"
     },
     {
       "nombre": "TV Samsung Smart 32",
       "categoria": "Entretenimiento",
       "precio": 6770,
-      "descuento": 40
+      "descuento": 40,
+      "imagen": "assets/img/products/img-tv-samsung-smart.jpg"
     },
     {
       "nombre": "Samsung S10",
       "categoria": "Teléfonos",
       "precio": 6770,
-      "descuento": 40
+      "descuento": 40,
+      "imagen": "assets/img/products/img-samsung-galaxy-s10.jpg"
     }
   ]
 }
