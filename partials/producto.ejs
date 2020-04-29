@@ -1,0 +1,15 @@
+<% for(var i = 0; i < listaProductos.productos.length; i++) { %>
+  <article class="card-container">
+    <a href="javascript:void(0)" class="card product">
+      <div class="card-img" style="background-image: url('<%=  listaProductos.productos[i].imagen %>');">
+      </div>
+      <div class="card-body">
+        <i class="material-icons shipping">local_shipping</i>
+        <h4 class="card-title">$<%= listaProductos.productos[i].precio %>
+          <small class="text-success">%<%= listaProductos.productos[i].descuento %> Off</small>
+        </h4>
+        <p><%= listaProductos.productos[i].nombre %></p>
+      </div>
+    </a>
+  </article>
+<% } %>

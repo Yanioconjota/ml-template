@@ -497,7 +497,7 @@ pre {
     padding-right: 0;
     padding-left: 0; }
 
-.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .custom-card-wrapper .single, .custom-card-wrapper .medium, .custom-card-wrapper .full, .col,
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .card-container, .col,
 .col-auto, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm,
 .col-sm-auto, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-md,
 .col-md-auto, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg,
@@ -586,7 +586,7 @@ pre {
   flex: 0 0 91.66667%;
   max-width: 91.66667%; }
 
-.col-12, .custom-card-wrapper .single, .custom-card-wrapper .medium, .custom-card-wrapper .full {
+.col-12, .card-container {
   flex: 0 0 100%;
   max-width: 100%; }
 
@@ -822,13 +822,13 @@ pre {
   .col-md-3 {
     flex: 0 0 25%;
     max-width: 25%; }
-  .col-md-4, .custom-card-wrapper .single {
+  .col-md-4 {
     flex: 0 0 33.33333%;
     max-width: 33.33333%; }
   .col-md-5 {
     flex: 0 0 41.66667%;
     max-width: 41.66667%; }
-  .col-md-6, .custom-card-wrapper .medium {
+  .col-md-6, .card-container {
     flex: 0 0 50%;
     max-width: 50%; }
   .col-md-7 {
@@ -937,7 +937,7 @@ pre {
   .col-lg-2 {
     flex: 0 0 16.66667%;
     max-width: 16.66667%; }
-  .col-lg-3 {
+  .col-lg-3, .card-container {
     flex: 0 0 25%;
     max-width: 25%; }
   .col-lg-4 {
@@ -4680,14 +4680,12 @@ a.close.disabled {
 .align-text-top {
   vertical-align: text-top !important; }
 
-.bg-primary, .custom-card-wrapper .full .card {
+.bg-primary {
   background-color: #3483fa !important; }
 
-a.bg-primary:hover, .custom-card-wrapper .full a.card:hover, a.bg-primary:focus, .custom-card-wrapper .full a.card:focus,
+a.bg-primary:hover, a.bg-primary:focus,
 button.bg-primary:hover,
-.custom-card-wrapper .full button.card:hover,
-button.bg-primary:focus,
-.custom-card-wrapper .full button.card:focus {
+button.bg-primary:focus {
   background-color: #0665f5 !important; }
 
 .bg-secondary {
@@ -5586,8 +5584,7 @@ button.bg-dark:focus {
   margin: 0.25rem !important; }
 
 .mt-1,
-.my-1,
-.custom-card-wrapper > * {
+.my-1 {
   margin-top: 0.25rem !important; }
 
 .mr-1,
@@ -5595,8 +5592,7 @@ button.bg-dark:focus {
   margin-right: 0.25rem !important; }
 
 .mb-1,
-.my-1,
-.custom-card-wrapper > * {
+.my-1 {
   margin-bottom: 0.25rem !important; }
 
 .ml-1,
@@ -5679,7 +5675,7 @@ button.bg-dark:focus {
 .mx-5 {
   margin-left: 3rem !important; }
 
-.p-0 {
+.p-0, .card {
   padding: 0 !important; }
 
 .pt-0,
@@ -5717,7 +5713,7 @@ button.bg-dark:focus {
 .px-1 {
   padding-left: 0.25rem !important; }
 
-.p-2, .custom-card-wrapper .card {
+.p-2 {
   padding: 0.5rem !important; }
 
 .pt-2,
@@ -7671,7 +7667,7 @@ pre {
     padding-right: 0;
     padding-left: 0; }
 
-.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .custom-card-wrapper .single, .custom-card-wrapper .medium, .custom-card-wrapper .full, .col,
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .card-container, .col,
 .col-auto, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm,
 .col-sm-auto, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-md,
 .col-md-auto, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg,
@@ -7760,7 +7756,7 @@ pre {
   flex: 0 0 91.66667%;
   max-width: 91.66667%; }
 
-.col-12, .custom-card-wrapper .single, .custom-card-wrapper .medium, .custom-card-wrapper .full {
+.col-12, .card-container {
   flex: 0 0 100%;
   max-width: 100%; }
 
@@ -7996,13 +7992,13 @@ pre {
   .col-md-3 {
     flex: 0 0 25%;
     max-width: 25%; }
-  .col-md-4, .custom-card-wrapper .single {
+  .col-md-4 {
     flex: 0 0 33.33333%;
     max-width: 33.33333%; }
   .col-md-5 {
     flex: 0 0 41.66667%;
     max-width: 41.66667%; }
-  .col-md-6, .custom-card-wrapper .medium {
+  .col-md-6, .card-container {
     flex: 0 0 50%;
     max-width: 50%; }
   .col-md-7 {
@@ -8111,7 +8107,7 @@ pre {
   .col-lg-2 {
     flex: 0 0 16.66667%;
     max-width: 16.66667%; }
-  .col-lg-3 {
+  .col-lg-3, .card-container {
     flex: 0 0 25%;
     max-width: 25%; }
   .col-lg-4 {
@@ -13828,14 +13824,12 @@ a.close.disabled {
 .align-text-top {
   vertical-align: text-top !important; }
 
-.bg-primary, .custom-card-wrapper .full .card {
+.bg-primary {
   background-color: #3483fa !important; }
 
-a.bg-primary:hover, .custom-card-wrapper .full a.card:hover, a.bg-primary:focus, .custom-card-wrapper .full a.card:focus,
+a.bg-primary:hover, a.bg-primary:focus,
 button.bg-primary:hover,
-.custom-card-wrapper .full button.card:hover,
-button.bg-primary:focus,
-.custom-card-wrapper .full button.card:focus {
+button.bg-primary:focus {
   background-color: #0665f5 !important; }
 
 .bg-secondary {
@@ -13966,14 +13960,12 @@ button.bg-pale-gray:hover,
 button.bg-pale-gray:focus {
   background-color: rgba(0, 0, 0, 0.06) !important; }
 
-.bg-greenapple, .custom-card-wrapper .single .card {
+.bg-greenapple {
   background-color: #8ede4d !important; }
 
-a.bg-greenapple:hover, .custom-card-wrapper .single a.card:hover, a.bg-greenapple:focus, .custom-card-wrapper .single a.card:focus,
+a.bg-greenapple:hover, a.bg-greenapple:focus,
 button.bg-greenapple:hover,
-.custom-card-wrapper .single button.card:hover,
-button.bg-greenapple:focus,
-.custom-card-wrapper .single button.card:focus {
+button.bg-greenapple:focus {
   background-color: #73d127 !important; }
 
 .bg-cyan {
@@ -14026,14 +14018,12 @@ button.bg-indigo:hover,
 button.bg-indigo:focus {
   background-color: #1c90f7 !important; }
 
-.bg-pink, .custom-card-wrapper .medium .card {
+.bg-pink {
   background-color: #ff94b9 !important; }
 
-a.bg-pink:hover, .custom-card-wrapper .medium a.card:hover, a.bg-pink:focus, .custom-card-wrapper .medium a.card:focus,
+a.bg-pink:hover, a.bg-pink:focus,
 button.bg-pink:hover,
-.custom-card-wrapper .medium button.card:hover,
-button.bg-pink:focus,
-.custom-card-wrapper .medium button.card:focus {
+button.bg-pink:focus {
   background-color: #ff6198 !important; }
 
 .bg-berry {
@@ -14983,8 +14973,7 @@ button.bg-blue:focus {
   margin: 0.25rem !important; }
 
 .mt-1,
-.my-1,
-.custom-card-wrapper > * {
+.my-1 {
   margin-top: 0.25rem !important; }
 
 .mr-1,
@@ -14992,8 +14981,7 @@ button.bg-blue:focus {
   margin-right: 0.25rem !important; }
 
 .mb-1,
-.my-1,
-.custom-card-wrapper > * {
+.my-1 {
   margin-bottom: 0.25rem !important; }
 
 .ml-1,
@@ -15076,7 +15064,7 @@ button.bg-blue:focus {
 .mx-5 {
   margin-left: 3rem !important; }
 
-.p-0 {
+.p-0, .card {
   padding: 0 !important; }
 
 .pt-0,
@@ -15114,7 +15102,7 @@ button.bg-blue:focus {
 .px-1 {
   padding-left: 0.25rem !important; }
 
-.p-2, .custom-card-wrapper .card {
+.p-2 {
   padding: 0.5rem !important; }
 
 .pt-2,
@@ -19072,9 +19060,11 @@ html, body {
   height: 100%; }
 
 body {
-  margin-top: 8rem;
+  margin-top: 11rem;
   font-family: "OpenSans";
-  color: #fff; }
+  font-size: 14px;
+  background-color: #f8f9fa;
+  color: #343a40; }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "OpenSans"; }
@@ -19147,34 +19137,74 @@ i {
 .input-group i {
   color: #fff; }
 
-.custom-card-wrapper .card {
-  min-height: 10rem; }
-
-@media (max-width: 991.98px) {
-  .custom-card-wrapper .card {
-    margin-top: 1em; } }
+.card-container {
+  min-height: calc(375px + 3rem); }
 
 .card {
-  border-radius: 0;
-  min-height: 255px;
-  margin-bottom: 2rem; }
-  .card .card-img {
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 0;
-    height: 180px;
-    position: relative; }
-  .card .card-body {
-    background-color: #222;
-    color: #ff94b9; }
-  .card .card-title {
+  border-radius: 0; }
+  .card.product {
+    overflow: hidden;
+    transition: all 0.3s ease-out;
+    height: auto;
+    max-height: 325px;
+    margin-bottom: 2rem;
+    color: #6c757d; }
+    .card.product.hover {
+      max-height: 375px; }
+    .card.product .card-img {
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      border-radius: 0;
+      height: 240px;
+      margin: 10px; }
+    .card.product .card-body {
+      position: relative;
+      border-top: 1px solid #ced4da;
+      padding: 1.15rem; }
+      .card.product .card-body .shipping {
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+        border-radius: 50%;
+        position: absolute;
+        top: -23px;
+        right: 10px;
+        padding: 12px;
+        background-color: #fff;
+        border: 1px solid #ced4da;
+        color: #48ce65; }
+      .card.product .card-body p {
+        margin: 0;
+        font-size: .8rem; }
+    .card.product .card-title {
+      text-transform: uppercase; }
+      .card.product .card-title small {
+        font-size: .9rem; }
+    .card.product:hover .shipping {
+      -webkit-transform: rotate(360deg);
+      -moz-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+      transform: rotate(360deg); }
+
+footer {
+  background-color: #fff;
+  position: relative;
+  padding: 2rem 0 5rem 0; }
+  footer .material-icons {
+    font-size: 3rem;
+    color: #3483fa;
+    padding: 1rem 0; }
+  footer h5 {
+    font-family: "OpenSans-Semibold"; }
+  footer .disclaimer {
+    color: #fff;
+    background-color: #212529;
+    width: 100%;
+    padding: 1rem;
+    text-align: right;
     position: absolute;
-    color: #ff94b9;
-    background-color: #222;
-    padding: 8px 12px;
-    bottom: 0;
-    margin: 0;
-    font-size: 80%;
-    text-transform: uppercase;
-    font-family: "OpenSans-Semibolditalic"; }
+    bottom: 0; }
+    footer .disclaimer a {
+      color: #fff; }

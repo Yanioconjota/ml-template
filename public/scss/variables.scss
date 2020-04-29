@@ -56,9 +56,6 @@ $paler-gray: rgba(0, 0, 0, 0.04);
 $dark-gray: #7f7f7f;
 $default-gray: #efefef;
 
-
-
-
 $theme-colors: () !default;
 $theme-colors: map-merge(("primary": $primary,
     "secondary": $secondary,
@@ -90,4 +87,8 @@ $theme-colors: map-merge(("primary": $primary,
     "teal": $teal,
     "blue": $blue), $theme-colors);
 //stylelint-enable
+
+//Sizes
+$card-start-height: 325px;
+$card-end-height: 375px;
 
