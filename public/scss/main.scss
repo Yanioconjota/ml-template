@@ -11,7 +11,6 @@ html,body {
   height: 100%;
 }
 body {
-  margin-top: 11rem;
   font-family: $font;
   font-size: 14px;
   background-color: $gray-100;
@@ -121,6 +120,22 @@ i {
 .input-group {
   i {
     color: $white;
+  }
+}
+
+.banner {
+  width: 100%;
+  margin-bottom: 3rem;
+  display: block;
+  img {
+    width: 100%;
+  }
+  @include media-breakpoint-up(xs) {
+    margin-top: 135.641px;
+  }
+
+  @include media-breakpoint-up(lg) {
+    margin-top: calc(95.64px);
   }
 }
 

@@ -19060,7 +19060,6 @@ html, body {
   height: 100%; }
 
 body {
-  margin-top: 11rem;
   font-family: "OpenSans";
   font-size: 14px;
   background-color: #f8f9fa;
@@ -19136,6 +19135,17 @@ i {
 
 .input-group i {
   color: #fff; }
+
+.banner {
+  width: 100%;
+  margin-bottom: 3rem;
+  display: block;
+  margin-top: 135.641px; }
+  .banner img {
+    width: 100%; }
+  @media (min-width: 992px) {
+    .banner {
+      margin-top: calc(95.64px); } }
 
 .card-container {
   min-height: calc(375px + 3rem); }
