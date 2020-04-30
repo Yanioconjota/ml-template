@@ -157,7 +157,7 @@ i {
     margin-bottom: 2rem;
     color: $gray-600;
     &.hover {
-      max-height: $card-end-height;;
+      max-height: $card-end-height;
     }
     .card-img {
       @include background(center, no-repeat, contain);
