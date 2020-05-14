@@ -7,7 +7,7 @@
     "build-css": "node-sass --include-path scss public/scss/main.scss build/css/main.css",
     "build-js": "browserify public/js/main.js>build/js/scripts.js",
     "build": "npm run build-css && npm run build-js",
-    "server": "nodemon bin/www",
+    "server": "nodemon src/bin/www",
     "start": "nodemon -e ejs,js,scss -x \"npm run build && npm run server\" --ignore build/"
   },
   "repository": {

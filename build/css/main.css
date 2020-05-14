@@ -19064,6 +19064,8 @@ body {
   font-size: 14px;
   background-color: #f8f9fa;
   color: #343a40; }
+  body.detail {
+    margin-top: 8rem; }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "OpenSans"; }
@@ -19162,7 +19164,7 @@ i {
     .card.product.hover {
       max-height: 375px; }
     .card.product .card-img {
-      background-position: center;
+      background-position: initial;
       background-repeat: no-repeat;
       background-size: contain;
       border-radius: 0;
@@ -19198,10 +19200,89 @@ i {
       -ms-transform: rotate(360deg);
       transform: rotate(360deg); }
 
+/*====== Product Detail ======*/
+.product-detail {
+  background-color: #ffffff;
+  border-radius: 8px;
+  overflow: hidden; }
+
+.product-detail-img {
+  width: 70%;
+  display: block;
+  margin: auto; }
+
+.product-detail-info {
+  border-left: 1px solid var(--light-gray);
+  padding: 15px;
+  height: 100%; }
+
+.product-detail-title {
+  font-weight: 400; }
+
+.product-detail-description {
+  padding: 15px;
+  line-height: 1.5; }
+
+.product-detail-price {
+  margin: 10px 0; }
+
+.small {
+  color: var(--green); }
+
+.small span {
+  text-decoration: line-through; }
+
+.actions-list {
+  margin-bottom: 50px; }
+
+.actions-list li {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+  padding: 20px 0; }
+
+.actions-list i {
+  color: var(--green);
+  font-size: 2em;
+  margin-right: 15px; }
+
+.actions-list p {
+  color: var(--gray);
+  margin: 0; }
+
+.buy-now-button {
+  background-color: var(--light-blue);
+  font-size: 1.6em;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  border-radius: 8px;
+  border: none;
+  margin-bottom: 15px; }
+
+.action-button {
+  border: none;
+  border-radius: 8px;
+  color: #ffffff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 30px;
+  margin-top: 15px; }
+
+.action-button.edit {
+  background-color: chocolate; }
+
+.action-button.delete {
+  background-color: #f84525; }
+
 footer {
   background-color: #fff;
   position: relative;
-  padding: 2rem 0 5rem 0; }
+  padding: 2rem 0 5rem 0;
+  margin-top: 3rem; }
   footer .material-icons {
     font-size: 3rem;
     color: #3483fa;
