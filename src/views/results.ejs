@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <%- include('partials/head', {title: 'Resultados de la búsqueda'}) %>
+</head>
+
+<body>
+  <!-- navbar header -->
+  <%- include('partials/header') %>
+  <!-- /.navbar header -->
+
+  <!-- home content -->
+  <%- include('partials/banner') %>
+
+  <div class="container">
+    <section class="row custom-card-wrapper">
+      <div class="col-12">
+        <h3>Resultados de la búsqueda: <%= results.length %></h3>
+      </div>
+      <% for (let i=0; i < results.length; i++) { %>
+      <article class="card-container">
+        <a href="/products/detail/<%= results[i].id %>" class="card product">
+          <div class="card-img" style="background-image: url('/assets/img/products/<%= results[i].image %>');">
+          </div>
+          <div class="card-body">
+            <i class="material-icons shipping">local_shipping</i>
+            <h4 class="card-title">$<%= finalPrice(results[i].price, results[i].discount) %>
+              <small class="text-success"><%= results[i].discount %> % OFF</small>
+            </h4>
+            <p><%= results[i].name %></p>
+          </div>
+        </a>
+      </article>
+      <% } %>
+      <% if (results == 0) { %>
+      <div class="col-12">
+        <h3 class="text-danger">No hay productos que coincidan con esa búsqueda</h3>
+      </div>
+      <% } %>
+    </section>
+  </div>
+  <!-- /.home content -->
+  <%- include('partials/footer') %>
+
+  <%- include('partials/scripts') %>
+</body>
+
+</html>

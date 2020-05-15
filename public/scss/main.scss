@@ -208,92 +208,47 @@ i {
   background-color: #ffffff;
   border-radius: 8px;
   overflow: hidden;
-}
-
-.product-detail-img {
-  width: 70%;
-  display: block;
-  margin: auto;
-}
-
-.product-detail-info {
-  border-left: 1px solid var(--light-gray);
-  padding: 15px;
-  height: 100%;
-}
-
-.product-detail-title {
-  font-weight: 400;
-}
-
-.product-detail-description {
-  padding: 15px;
-  line-height: 1.5;
-}
-
-.product-detail-price {
-  margin: 10px 0;
-}
-
-.small {
-  color: var(--green);
-}
-
-.small span {
-  text-decoration: line-through;
-}
-
-.actions-list {
-  margin-bottom: 50px;
-}
-
-.actions-list li {
-  display: flex;
-  align-items: center;
-  margin: 20px 0;
-  padding: 20px 0;
-}
-
-.actions-list i {
-  color: var(--green);
-  font-size: 2em;
-  margin-right: 15px;
-}
-
-.actions-list p {
-  color: var(--gray);
-  margin: 0;
-}
-
-.buy-now-button {
-  background-color: var(--light-blue);
-  font-size: 1.6em;
-  color: #ffffff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 15px;
-  border-radius: 8px;
-  border: none;
-  margin-bottom: 15px;
-}
-
-.action-button {
-  border: none;
-  border-radius: 8px;
-  color: #ffffff;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 15px 30px;
-  margin-top: 15px;
-}
-
-.action-button.edit {
-  background-color: chocolate;
-}
-.action-button.delete {
-  background-color: rgb(248, 69, 37);
+  .product-detail-img {
+    width: 70%;
+    display: block;
+    margin: auto;
+  }
+  .product-detail-info {
+    border-left: 1px solid var(--light-gray);
+    padding: 15px;
+    height: 100%;
+  }
+  .product-detail-description {
+    padding: 15px;
+    line-height: 1.5;
+  }
+  .product-detail-price {
+    margin: 10px 0;
+  }
+  .discount {
+    color: $success;
+    span {
+      text-decoration: line-through;
+    }
+  }
+  
+  .actions-list {
+    @extend .list-unstyled;
+    li {
+      display: flex;
+      align-items: center;
+      padding: 20px 0;
+    }
+    i {
+      color: $success;
+      font-size: 2em;
+      margin-right: 15px;
+    }
+    p {
+      color: $black;
+      margin: 0;
+    }
+  }
 }
 
 footer {

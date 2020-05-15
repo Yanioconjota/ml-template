@@ -39,6 +39,12 @@ const controller = {
     });
 
   },
+  all: (req, res) => {
+    res.render('products', {
+      products: products,
+      finalPrice: finalPrice
+    });
+  }
 };
 
 module.exports = controller;

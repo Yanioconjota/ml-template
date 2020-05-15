@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <%- include('partials/head', {title: 'Inicio'}) %>
+  <%- include('partials/head', {title: 'Detalle de producto'}) %>
 </head>
 
 <body class="detail">
@@ -24,16 +24,16 @@
         </div>
         <div class="col-12 col-lg-4">
           <article class="product-detail-info">
-            <h4 class="product-detail-title"><%= product.name %></h4>
+            <h4><%= product.name %></h4>
 
-            <p class="product-detail-price small">
+            <p class="product-detail-price discount">
               <span>$<%= product.price %></span>
               /
               <b><%= product.discount %>% OFF</b>
             </p>
-            <p class="product-detail-price">
+            <h2 class="product-detail-price">
               $<%= finalPrice(product.price, product.discount) %>
-            </p>
+            </h2>
 
             <ul class="actions-list">
               <li>
@@ -41,17 +41,17 @@
                 <p>Pagá en 12 cuotas sin interes</p>
               </li>
               <li>
-                <i class="fas fa-store"></i>
+                <i class="fa fa-shopping-bag"></i>
                 <p>Retiro gratis en locales del vendedor</p>
               </li>
             </ul>
 
-            <a href="#" class="buy-now-button">COMPRAR AHORA</a>
+            <a href="#" class="btn btn-primary">COMPRAR AHORA</a>
             <hr>
 
-            <a href="/products/edit/<%= product.id %>" class="action-button edit">EDITAR PRODUCTO</a>
-            <form action="/products/delete/<%= product.id %>?_method=DELETE" method="POST" style="display: inline-flex">
-              <button type="submit" class="action-button delete">ELIMINAR</button>
+            <form class="btn-group" action="/products/delete/<%= product.id %>?_method=DELETE" method="POST">
+              <a href="/products/edit/<%= product.id %>" class="btn btn-orange">EDITAR PRODUCTO</a>
+              <button type="submit" class="btn btn-danger">ELIMINAR</button>
             </form>
           </article>
         </div>

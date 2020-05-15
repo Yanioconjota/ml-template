@@ -359,7 +359,7 @@ mark,
   padding: 0.2em;
   background-color: #fcf8e3; }
 
-.list-unstyled {
+.list-unstyled, .product-detail .actions-list {
   padding-left: 0;
   list-style: none; }
 
@@ -7529,7 +7529,7 @@ mark,
   padding: 0.2em;
   background-color: #fcf8e3; }
 
-.list-unstyled {
+.list-unstyled, .product-detail .actions-list {
   padding-left: 0;
   list-style: none; }
 
@@ -19205,78 +19205,34 @@ i {
   background-color: #ffffff;
   border-radius: 8px;
   overflow: hidden; }
-
-.product-detail-img {
-  width: 70%;
-  display: block;
-  margin: auto; }
-
-.product-detail-info {
-  border-left: 1px solid var(--light-gray);
-  padding: 15px;
-  height: 100%; }
-
-.product-detail-title {
-  font-weight: 400; }
-
-.product-detail-description {
-  padding: 15px;
-  line-height: 1.5; }
-
-.product-detail-price {
-  margin: 10px 0; }
-
-.small {
-  color: var(--green); }
-
-.small span {
-  text-decoration: line-through; }
-
-.actions-list {
-  margin-bottom: 50px; }
-
-.actions-list li {
-  display: flex;
-  align-items: center;
-  margin: 20px 0;
-  padding: 20px 0; }
-
-.actions-list i {
-  color: var(--green);
-  font-size: 2em;
-  margin-right: 15px; }
-
-.actions-list p {
-  color: var(--gray);
-  margin: 0; }
-
-.buy-now-button {
-  background-color: var(--light-blue);
-  font-size: 1.6em;
-  color: #ffffff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 15px;
-  border-radius: 8px;
-  border: none;
-  margin-bottom: 15px; }
-
-.action-button {
-  border: none;
-  border-radius: 8px;
-  color: #ffffff;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 15px 30px;
-  margin-top: 15px; }
-
-.action-button.edit {
-  background-color: chocolate; }
-
-.action-button.delete {
-  background-color: #f84525; }
+  .product-detail .product-detail-img {
+    width: 70%;
+    display: block;
+    margin: auto; }
+  .product-detail .product-detail-info {
+    border-left: 1px solid var(--light-gray);
+    padding: 15px;
+    height: 100%; }
+  .product-detail .product-detail-description {
+    padding: 15px;
+    line-height: 1.5; }
+  .product-detail .product-detail-price {
+    margin: 10px 0; }
+  .product-detail .discount {
+    color: #48ce65; }
+    .product-detail .discount span {
+      text-decoration: line-through; }
+  .product-detail .actions-list li {
+    display: flex;
+    align-items: center;
+    padding: 20px 0; }
+  .product-detail .actions-list i {
+    color: #48ce65;
+    font-size: 2em;
+    margin-right: 15px; }
+  .product-detail .actions-list p {
+    color: #222;
+    margin: 0; }
 
 footer {
   background-color: #fff;
