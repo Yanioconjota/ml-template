@@ -15,6 +15,9 @@ body {
   font-size: 14px;
   background-color: $gray-100;
   color: $gray-800;
+  &.detail {
+    margin-top: 8rem;
+  }
 }
 
 h1,
@@ -160,7 +163,7 @@ i {
       max-height: $card-end-height;
     }
     .card-img {
-      @include background(center, no-repeat, contain);
+      @include background(initial, no-repeat, contain);
       @include border-radius(0);
       height: 240px;
       margin: 10px;
@@ -200,10 +203,59 @@ i {
   }
 }
 
+/*====== Product Detail ======*/
+.product-detail {
+  background-color: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+  .product-detail-img {
+    width: 70%;
+    display: block;
+    margin: auto;
+  }
+  .product-detail-info {
+    border-left: 1px solid var(--light-gray);
+    padding: 15px;
+    height: 100%;
+  }
+  .product-detail-description {
+    padding: 15px;
+    line-height: 1.5;
+  }
+  .product-detail-price {
+    margin: 10px 0;
+  }
+  .discount {
+    color: $success;
+    span {
+      text-decoration: line-through;
+    }
+  }
+  
+  .actions-list {
+    @extend .list-unstyled;
+    li {
+      display: flex;
+      align-items: center;
+      padding: 20px 0;
+    }
+    i {
+      color: $success;
+      font-size: 2em;
+      margin-right: 15px;
+    }
+    p {
+      color: $black;
+      margin: 0;
+    }
+  }
+}
+
 footer {
   background-color: $white;
   position: relative;
   padding: 2rem 0 5rem 0;
+  margin-top: 3rem;
   .material-icons {
     font-size: 3rem;
     color: $primary;

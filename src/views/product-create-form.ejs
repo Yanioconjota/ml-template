@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <%- include('partials/head', {title: 'Crear producto'}) %>
+</head>
+
+<body class="detail">
+  <!-- navbar header -->
+  <%- include('partials/header') %>
+  <!-- /.navbar header -->
+
+  <!-- detaik content -->
+
+  <!-- product create -->
+  <div class="container products-wrapper">
+    <div class="row">
+      <div class="col-12">
+        <h2 class="products-title">Formulario de creación de productos</h2>
+      </div>
+    </div>
+    <div class="col-12">
+      <form action="/products/create" method="POST">
+        <div class="row product-detail p-3">
+          <div class="col-12 col-md-6 form-group">
+            <label for="name" class="form-label">Nombre del producto:</label>
+            <input class="form-control" type="text" id="name" name="name" placeholder="Ej: Zapatillas Reebok">
+          </div>
+          <div class="col-12 col-md-6 form-group">
+            <label for="price" class="form-label">Precio del producto:</label>
+            <input class="form-control" type="text" id="price" name="price" placeholder="Ej: 5678">
+          </div>
+          <div class="col-12 col-md-6 form-group">
+            <label for="discount" class="form-label">Descuento:</label>
+            <input class="form-control" type="text" id="discount" name="discount" placeholder="Ej: 15">
+          </div>
+          <div class="col-12 col-md-6 form-group">
+            <label for="category" class="form-label">Categoría:</label>
+            <select class="custom-select" name="category" id="category">
+              <option value="">Elegí</option>
+              <option value="in-sale">En oferta</option>
+              <option value="visited">Últimos agregados</option>
+            </select>
+          </div>
+          <div class="col-12">
+            <label for="description" class="form-label">Descipción:</label>
+            <textarea class="form-control" name="description" id="description"></textarea>
+          </div>
+          <div class="col-12 mt-3">
+            <button type="submit" class="btn btn-primary">Guardar producto</button>
+          </div>
+        </div>
+      </form>
+    </div>
+
+  </div>
+  <!-- /product create -->
+
+  <!-- /.detaik content -->
+  <%- include('partials/footer') %>
+
+  <%- include('partials/scripts') %>
+</body>
+
+</html>
