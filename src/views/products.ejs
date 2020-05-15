@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <%- include('partials/head', {title: 'Inicio'}) %>
+</head>
+
+<body>
+  <!-- navbar header -->
+  <%- include('partials/header') %>
+  <!-- /.navbar header -->
+
+  <!-- home content -->
+  <%- include('partials/banner') %>
+
+  <div class="container">
+    <section class="row custom-card-wrapper">
+      <div class="col-12">
+        <h3>Todos los productos</h3>
+      </div>
+      <% for (product of products) { %>
+      <article class="card-container">
+        <a href="/products/detail/<%= product.id %>" class="card product">
+          <div class="card-img" style="background-image: url('/assets/img/products/<%= product.image %>');">
+          </div>
+          <div class="card-body">
+            <i class="material-icons shipping">local_shipping</i>
+            <h4 class="card-title">$<%= finalPrice(product.price, product.discount) %>
+              <small class="text-success"><%= product.discount %> % OFF</small>
+            </h4>
+            <p><%= product.name %></p>
+          </div>
+        </a>
+      </article>
+      <% } %>
+    </section>
+  </div>
+  <!-- /.home content -->
+  <%- include('partials/footer') %>
+
+  <%- include('partials/scripts') %>
+</body>
+
+</html>
