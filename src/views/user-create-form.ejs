@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <%- include('partials/head', {title: 'Crear Usuario'}) %>
+</head>
+
+<body class="detail">
+  <!-- navbar header -->
+  <%- include('partials/header') %>
+  <!-- /.navbar header -->
+
+  <!-- detaik content -->
+
+  <!-- product create -->
+  <div class="container products-wrapper">
+    <div class="row">
+      <div class="col-12">
+        <h2 class="products-title">Formulario de creación de productos</h2>
+      </div>
+    </div>
+    <div class="col-12">
+      <form action="/users/register" method="POST" enctype="multipart/form-data">
+        <div class="row product-detail p-3">
+          <div class="col-12 col-md-6 form-group">
+            <label for="name" class="form-label">Nombre:</label>
+            <input class="form-control" type="text" id="name" name="name" placeholder="Ej: Homero">
+          </div>
+          <div class="col-12 col-md-6 form-group">
+            <label for="lastname" class="form-label">Apellido:</label>
+            <input class="form-control" type="text" id="lastname" name="lastname" placeholder="Ej: Thompson">
+          </div>
+          <div class="col-12 col-md-6 form-group">
+            <label for="email" class="form-label">Email:</label>
+            <input class="form-control" type="email" id="email" name="email" placeholder="Ej: homerothompson@gmail.com">
+          </div>
+          <div class="col-12 col-md-6 form-group">
+            <label for="password" class="form-label">Contraseña:</label>
+            <input class="form-control" type="password" id="password" name="password" placeholder="Ingrese una contraseña">
+          </div>
+          <div class="col-12 col-md-6 form-group">
+            <label for="passwordConfirm" class="form-label">Repetir Contraseña:</label>
+            <input class="form-control" type="password" id="passwordConfirm" name="passwordConfirm" placeholder="Ingrese una contraseña">
+          </div>
+          <div class="col-12 form-group">
+            <label for="avatar" class="form-label">Avatar:</label>
+            <input class="form-control" type="file" id="avatar" name="avatar" placeholder="Seleccione una imagen para mostrar">
+          </div>
+          <div class="col-12 mt-3">
+            <button type="submit" class="btn btn-primary">Guardar</button>
+          </div>
+        </div>
+      </form>
+    </div>
+
+  </div>
+  <!-- /product create -->
+
+  <!-- /.detaik content -->
+  <%- include('partials/footer') %>
+
+  <%- include('partials/scripts') %>
+</body>
+
+</html>
