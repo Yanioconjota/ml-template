@@ -38,12 +38,6 @@ const controller = {
       finalPrice: finalPrice
     });
 
-  },
-  all: (req, res) => {
-    res.render('products', {
-      products: products,
-      finalPrice: finalPrice
-    });
   }
 };
 

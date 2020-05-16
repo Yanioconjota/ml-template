@@ -18,7 +18,10 @@ const finalPrice = (price, discount) => {
 const controller = {
   // Root - Show all products
   root: (req, res) => {
-    // Do the magic
+    res.render('products', {
+      products: products,
+      finalPrice: finalPrice
+    });
   },
 
   // Detail - Detail from one product
