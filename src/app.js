@@ -16,6 +16,7 @@ const logsMiddleware = require('./middlewares/logsMiddleware'); // Middleware de
 
 var app = express();
 app.use(connectLivereload());
+app.use(logsMiddleware);
 
 app.use('/assets', [
   express.static(__dirname + '../../public'),
@@ -49,7 +50,7 @@ liveReloadServer.server.once("connection", () => {
 app.use('/', mainRouter);
 app.use('/products', productsRouter);
 app.use('/users', usersRouter);
-app.use(logsMiddleware);
+
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   next(createError(404));
