@@ -1,10 +1,10 @@
 [
  {
   "id": 1,
-  "name": "Cafetera Moulinex Dolce Gusto Lumios",
+  "name": "Cafetera Moulinex Dolce Gusto Lumio",
   "price": "5000",
-  "discount": "50",
-  "category": "visited",
+  "discount": "25",
+  "category": "in-sale",
   "description": "Cafetera Dolce Gusto Lumio. La cafetera Dolce Gusto Lumio es de variedad automática que ha llegado con un diseño radical al que nos tenía acostumbrados Dolce Gusto.En este post te contamos todo lo que necesitas saber sobre ella, desde sus características técnicas hasta la calidad de las cápsulas o price.",
   "image": "img-cafetera-moulinex.jpg"
  },
@@ -150,6 +150,15 @@
   "discount": "10",
   "category": "",
   "description": "Nuevo parlante",
+  "image": "default-image.png"
+ },
+ {
+  "id": 19,
+  "name": "yanioconjota",
+  "price": "20000",
+  "discount": "50",
+  "category": "",
+  "description": "Un gordo caro",
   "image": "default-image.png"
  }
 ]
