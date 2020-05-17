@@ -12,6 +12,8 @@ const mainRouter = require('./routes/main'); // Rutas main
 const productsRouter = require('./routes/products'); // Rutas /products
 const usersRouter = require('./routes/users'); // Rutas /users
 
+const logsMiddleware = require('./middlewares/logsMiddleware'); // Middleware de logs
+
 var app = express();
 app.use(connectLivereload());
 
@@ -47,7 +49,7 @@ liveReloadServer.server.once("connection", () => {
 app.use('/', mainRouter);
 app.use('/products', productsRouter);
 app.use('/users', usersRouter);
-
+app.use(logsMiddleware);
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   next(createError(404));
