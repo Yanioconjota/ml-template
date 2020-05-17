@@ -151,5 +151,14 @@
   "category": "",
   "description": "Nuevo parlante",
   "image": "default-image.png"
+ },
+ {
+  "id": 19,
+  "name": "yanioconjota",
+  "price": "20000",
+  "discount": "50",
+  "category": "",
+  "description": "Un gordo caro",
+  "image": "default-image.png"
  }
 ]

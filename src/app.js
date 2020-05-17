@@ -16,7 +16,7 @@ const logsMiddleware = require('./middlewares/logsMiddleware'); // Middleware de
 
 var app = express();
 app.use(connectLivereload());
-app.use(logsMiddleware);
+//app.use(logsMiddleware);
 
 app.use('/assets', [
   express.static(__dirname + '../../public'),

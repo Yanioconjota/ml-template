@@ -1,0 +1,7 @@
+Se ingresó en /create
+Se ingresó en /delete/18?_method=DELETE
+Se ingresó en /edit/19?_method=PUT
+Se ingresó en /register
+Se ingresó en /edit/4?_method=PUT
+Se ingresó en /edit/4?_method=PUT
+Se ingresó en /delete/4?_method=DELETE
