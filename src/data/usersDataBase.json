@@ -22,5 +22,13 @@
   "email": "aycaramba@gmail.com",
   "password": "$2b$10$FZQS4J2oDcRLOWbj91k3H.Cz45QN/lZDoB6zbWtfRSKEXBYowc332",
   "image": "avatar-1589744720375.png"
+ },
+ {
+  "id": 4,
+  "name": "Rafael",
+  "lastname": "Marte",
+  "email": "rafa@rafa.com",
+  "password": "$2b$10$qoklCbcndfjCHkSUwqPmXu2ilr05duhfnjvPWpmUSDhhI.8YUpGwq",
+  "image": "avatar-1589842857384.jpg"
  }
 ]
