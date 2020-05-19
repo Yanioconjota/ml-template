@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <%- include('partials/head', {title: 'Formulario de Login'}) %>
+</head>
+
+<body class="detail">
+  <!-- navbar header -->
+  <%- include('partials/header') %>
+  <!-- /.navbar header -->
+
+  <!-- detaik content -->
+
+  <!-- product create -->
+  <div class="container products-wrapper">
+    <div class="row">
+      <div class="col-12 col-md-6 col-centered">
+        <h2 class="products-title">LOGIN</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 col-md-6 col-centered">
+        <form action="/users/login" method="POST">
+          <div class="row product-detail p-3">
+            <div class="col-12 form-group">
+              <label for="email" class="form-label">Email:</label>
+              <input class="form-control" type="email" id="email" name="email" placeholder="Ej: homerothompson@gmail.com">
+            </div>
+            <div class="col-12 form-group">
+              <label for="password" class="form-label">Contraseña:</label>
+              <input class="form-control" type="password" id="password" name="password"
+                placeholder="Ingrese una contraseña">
+            </div>
+            <div class="col-12 mt-3">
+              <button type="submit" class="btn btn-primary">Ingresar</button>
+            </div>
+          </div>
+        </form>
+        <% if(typeof error != 'undefined') { %>
+        <div class="alert alert-danger" role="alert">
+          <%= error %>
+        </div>
+        <% } %>
+      </div>
+    </div>
+
+  </div>
+  <!-- /product create -->
+
+  <!-- /.detaik content -->
+  <%- include('partials/footer') %>
+
+  <%- include('partials/scripts') %>
+</body>
+
+</html>

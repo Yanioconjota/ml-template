@@ -6,21 +6,5 @@
   "email": "homerothompson@gmail.com",
   "password": "123456",
   "image": "morgado.jpg"
- },
- {
-  "id": 2,
-  "name": "Parlante",
-  "lastname": "Isacura",
-  "email": "janioisacura@gmail.com",
-  "password": "$2b$10$h2QIhcPO9LcATSnRs9bGTODMqfbarjvYpkwo4W2kioUbe/og.4jp6",
-  "image": "avatar-1589671045328.png"
- },
- {
-  "id": 3,
-  "name": "Bart",
-  "lastname": "Simpson",
-  "email": "aycaramba@gmail.com",
-  "password": "$2b$10$FZQS4J2oDcRLOWbj91k3H.Cz45QN/lZDoB6zbWtfRSKEXBYowc332",
-  "image": "avatar-1589744720375.png"
  }
 ]

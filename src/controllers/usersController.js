@@ -66,13 +66,39 @@ const controller = {
     // volver al detalle
     res.redirect('/users/profile/' + id);
   },
-
   // Delete - Delete one user from DB
   destroy: (req, res) => {
     id = req.params.userId;
     let newUser = users.filter(p => p.id != id);
     fs.writeFileSync(usersFilePath, JSON.stringify(newUser, null, ' '));
     res.redirect('/');
+  },
+  login: (req, res) => {
+    res.render('login');
+  },
+  validate: (req, res) => {
+    // Validar la contraseña utilizando bcrypt.compareSync()
+    // mostrar la view de login con un error.
+    // Redireccionar a la home
+    const email = req.body.email;
+    const password = req.body.password;
+
+    const user = users.find((user) => {
+      return user.email == email;
+    });
+
+    if (!user) {
+      res.render('login', {
+        error: 'Usuario no encontrado!'
+      });
+    }
+    if (!bcrypt.compareSync(password, user.password)) {
+      res.render('login', {
+        error: 'Password incorrecto!'
+      });
+    }
+
+     res.render('login');
   }
 };
 

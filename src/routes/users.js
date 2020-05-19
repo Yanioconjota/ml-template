@@ -32,6 +32,9 @@ router.post('/register/', upload.any(), logsMiddleware, usersController.store); 
 router.get('/edit/:userId', usersController.edit); /* GET - Form to create */
 router.put('/edit/:userId', upload.any(), logsMiddleware, usersController.update); /* PUT - Update in DB */
 
+
 router.delete('/delete/:userId', logsMiddleware, usersController.destroy); /* DELETE - Delete from DB */
 
+router.get('/login/', usersController.login); /* GET - Form to create */
+router.post('/login/', usersController.validate); /* Post - Validation login */
 module.exports = router;
