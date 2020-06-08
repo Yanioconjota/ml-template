@@ -1,6 +1,4 @@
-# Mercado Liebre
-
-<img src="https://www.digitalhouse.com/ar/logo-DH.png" width="250px">
+# Mercado Liebre | CRUD productos
 
 [![Build Status](https://travis-ci.org/AriadnaNaya/Proyecto-Integrador---E-Commerce.svg?branch=master)](https://travis-ci.org/github/AriadnaNaya/Proyecto-Integrador---E-Commerce)
 
