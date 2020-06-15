@@ -4,7 +4,7 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 const methodOverride = require('method-override');
-
+const session = require('express-session');
 var connectLivereload = require("connect-livereload");
 const livereload = require('livereload');
 
@@ -25,6 +25,11 @@ app.use('/assets', [
   express.static(__dirname + '../../node_modules/jquery/dist/'),
   express.static(__dirname + '../../node_modules/bootstrap/dist/js/')
 ]);
+app.use(session({
+  secret: 'Secret modafocka!',
+  resave: true,
+  saveUninitialized: true
+}));
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');

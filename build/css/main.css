@@ -19110,6 +19110,10 @@ i {
   bottom: 0;
   right: 0; }
 
+.col-centered {
+  float: none;
+  margin: 0 auto; }
+
 .navbar .navbar-nav .right {
   margin: 0 auto 0 auto; }
   @media (min-width: 992px) {

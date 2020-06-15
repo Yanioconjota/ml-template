@@ -20,7 +20,12 @@
       </div>
     </div>
     <div class="col-12">
-      <form action="/users/register" method="POST" enctype="multipart/form-data">
+      <% if (typeof errors != 'undefined') { %>
+        <% for (error of errors) { %>
+          <div class="badge badge-danger"><%= error.msg %></div>
+        <% } %>
+      <% } %>
+      <form action="/users/register" method="POST">
         <div class="row product-detail p-3">
           <div class="col-12 col-md-6 form-group">
             <label for="name" class="form-label">Nombre:</label>
@@ -32,7 +37,7 @@
           </div>
           <div class="col-12 col-md-6 form-group">
             <label for="email" class="form-label">Email:</label>
-            <input class="form-control" type="email" id="email" name="email" placeholder="Ej: homerothompson@gmail.com">
+            <input class="form-control" type="text" id="email" name="email" placeholder="Ej: homerothompson@gmail.com">
           </div>
           <div class="col-12 col-md-6 form-group">
             <label for="password" class="form-label">Contraseña:</label>
@@ -41,10 +46,6 @@
           <div class="col-12 col-md-6 form-group">
             <label for="passwordConfirm" class="form-label">Repetir Contraseña:</label>
             <input class="form-control" type="password" id="passwordConfirm" name="passwordConfirm" placeholder="Ingrese una contraseña">
-          </div>
-          <div class="col-12 form-group">
-            <label for="avatar" class="form-label">Avatar:</label>
-            <input class="form-control" type="file" id="avatar" name="avatar" placeholder="Seleccione una imagen para mostrar">
           </div>
           <div class="col-12 mt-3">
             <button type="submit" class="btn btn-primary">Guardar</button>
