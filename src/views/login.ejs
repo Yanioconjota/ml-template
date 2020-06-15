@@ -21,27 +21,35 @@
     </div>
     <div class="row">
       <div class="col-12 col-md-6 col-centered">
+        <% if(typeof error != 'undefined') { %>
+        <div class="badge badge-danger" role="alert">
+          <%= error %>
+        </div>
+        <% } %>
         <form action="/users/login" method="POST">
           <div class="row product-detail p-3">
             <div class="col-12 form-group">
               <label for="email" class="form-label">Email:</label>
-              <input class="form-control" type="email" id="email" name="email" placeholder="Ej: homerothompson@gmail.com">
+              <input class="form-control" type="email" name="email" placeholder="Ej: homerothompson@gmail.com">
             </div>
             <div class="col-12 form-group">
               <label for="password" class="form-label">Contraseña:</label>
-              <input class="form-control" type="password" id="password" name="password"
+              <input class="form-control" type="password" name="password"
                 placeholder="Ingrese una contraseña">
+            </div>
+            <div class="col-12 form-group">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="remember">
+                <label class="form-check-label" for="remember">
+                  Recordar usuario
+                </label>
+              </div>
             </div>
             <div class="col-12 mt-3">
               <button type="submit" class="btn btn-primary">Ingresar</button>
             </div>
           </div>
         </form>
-        <% if(typeof error != 'undefined') { %>
-        <div class="alert alert-danger" role="alert">
-          <%= error %>
-        </div>
-        <% } %>
       </div>
     </div>
 

@@ -6,5 +6,53 @@
   "email": "homerothompson@gmail.com",
   "password": "123456",
   "image": "morgado.jpg"
+ },
+ {
+  "id": 2,
+  "name": "Janio",
+  "lastname": "Isacura",
+  "email": "janioisacura@gmail.com",
+  "password": "$2b$10$bDIkCeVSLDO477J2xq8QauYrTMO2GdsDVr81mLL6X8oFUHbTRyYw2",
+  "image": "avatar-1592081335322.jpg"
+ },
+ {
+  "id": 3,
+  "name": "Rafael",
+  "lastname": "Rojas",
+  "email": "rafa@rafa.com",
+  "password": "$2b$10$Zsf8OXKQCODNqL/iFf8yyeVkAxxtD1TiDvLvZtd/etXouLFvZNdLa",
+  "image": "avatar-1592074918943.jpg"
+ },
+ {
+  "id": 4,
+  "name": "José",
+  "lastname": "José",
+  "email": "jose@jose.com",
+  "password": "$2b$10$hmc.jMB.Sn9QXGI1nsPdieUrHCTJ951/6BQXoob2LIT2Q7MLUSEoO",
+  "image": "avatar-1592074918943.jpg"
+ },
+ {
+  "id": 5,
+  "name": "Gumercindo",
+  "lastname": "Rojas",
+  "email": "gumer_666@gmail.com",
+  "password": "$2b$10$NmLePVU0xEswxv/u.DbcVOdbw1q5EtYUotGi4R4yKEly/IIFTTbyi",
+  "image": "morgado.jpg"
+ },
+ {
+  "id": 6,
+  "name": "Soledad",
+  "lastname": "Villagra",
+  "email": "lasole@gmail.com",
+  "password": "$2b$10$Q5rJPAjSvUORHKw9jdEoUOZd/xw4XL72Sm7w4vRPqHNLVscC0cXJG",
+  "image": "morgado.jpg"
+ },
+ {
+  "id": 7,
+  "name": "1",
+  "lastname": "2",
+  "email": "asd",
+  "password": "$2b$10$SBGDA7lLBLxTj8vhTNOs4eCs1O/4InAQfQOJ38SjyEfltgo.JJXTK",
+  "image": "image-1592179031108.jpg"
  }
 ]
