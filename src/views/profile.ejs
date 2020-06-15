@@ -24,6 +24,7 @@
             <h2 class="product-detail-price">
               <%= user.name %> <%= user.lastname %>
             </h2>
+            <p><%= user.email %></p>
             <hr>
 
             <form class="btn-group" action="/users/delete/<%= user.id %>?_method=DELETE" method="POST">

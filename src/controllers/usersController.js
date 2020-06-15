@@ -89,15 +89,15 @@ const controller = {
   logUser: (req, res) => {
     //Validar que exista el mail
     const theUser = users.find((user) => {
-      return user.email === req.body.user_email;
+      return user.email === req.body.email;
     });
     if (theUser != undefined) {
       //Si existe el mail validamos que el password coincida usando bcrypt
-      if (bcrypt.compareSync(req.body.user_password, theUser.password)) {
+      if (bcrypt.compareSync(req.body.password, theUser.password)) {
         //Si coincide generamos la sesión del usuario
         req.session.user = theUser;
         //Si recordar usuario está checheado guardamos la sesión en una cookie
-        if (req.body.user_remember) {
+        if (req.body.remember) {
           //1er parametro: nombre, 2: valor, 3: Duración em ms
           //Para guardar la cookie debe hacerse en singular (res.cookie.nombreCookie)
           res.cookie('user', theUser.id, {maxAge: 999999999999999});
@@ -121,35 +121,12 @@ const controller = {
   },
   // Show user profile
   profile: (req, res) => {
-    id = req.params.userId;
-    const user = users.find(p => p.id == id);
+    if (req.session.user === undefined) {
+      return res.redirect('/users/login');
+    }
     res.render('profile', {
-      user: user
+      user: req.session.user
     });
-  },
-  validate: (req, res) => {
-    // Validar la contraseña utilizando bcrypt.compareSync()
-    // mostrar la view de login con un error.
-    // Redireccionar a la home
-    const email = req.body.email;
-    const password = req.body.password;
-
-    const user = users.find((user) => {
-      return user.email == email;
-    });
-
-    if (!user) {
-      res.render('login', {
-        error: 'Usuario no encontrado!'
-      });
-    }
-    if (!bcrypt.compareSync(password, user.password)) {
-      res.render('login', {
-        error: 'Password incorrecto!'
-      });
-    }
-
-     res.render('login');
   }
 };
 

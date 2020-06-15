@@ -20,6 +20,11 @@
       </div>
     </div>
     <div class="col-12">
+      <% if (typeof errors != 'undefined') { %>
+        <% for (error of errors) { %>
+          <div class="badge badge-danger"><%= error.msg %></div>
+        <% } %>
+      <% } %>
       <form action="/users/edit/<%= userToEdit.id %>?_method=PUT" method="POST"  enctype="multipart/form-data">
         <div class="row product-detail p-3">
           <div class="col-12 col-md-6 form-group">
@@ -32,17 +37,22 @@
           </div>
           <div class="col-12 col-md-6 form-group">
             <label for="email" class="form-label">Email:</label>
-            <input class="form-control" type="email" id="email" name="email" value="<%= userToEdit.email %>">
+            <input class="form-control" type="text" id="email" name="email" value="<%= userToEdit.email %>">
           </div>
           <div class="col-12 col-md-6 form-group">
             <label for="password" class="form-label">Contraseña:</label>
             <input class="form-control" type="password" id="password" name="password"
               placeholder="Ingrese una contraseña">
           </div>
+          <div class="col-12 col-md-6 form-group">
+            <label for="password" class="form-label">Repetir contraseña:</label>
+            <input class="form-control" type="password" id="passwordConfirm" name="passwordConfirm"
+              placeholder="Ingrese una contraseña">
+          </div>
           <div class="col-12 form-group">
-            <label for="avatar" class="form-label">Avatar:</label>
-            <input class="form-control" type="file" id="avatar" name="avatar"
-              placeholder="Seleccione una imagen para mostrar">
+            <label for="avatar" class="form-label">Imagen:</label>
+            <input class="form-control" type="file" id="image" name="image"
+              placeholder="Seleccione una imagen para mostrar" required>
           </div>
           <div class="col-12 mt-3">
             <button type="submit" class="btn btn-primary">Guardar</button>

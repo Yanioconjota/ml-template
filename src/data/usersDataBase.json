@@ -13,7 +13,7 @@
   "lastname": "Isacura",
   "email": "janioisacura@gmail.com",
   "password": "$2b$10$bDIkCeVSLDO477J2xq8QauYrTMO2GdsDVr81mLL6X8oFUHbTRyYw2",
-  "image": "avatar-1592074918943.jpg"
+  "image": "avatar-1592081335322.jpg"
  },
  {
   "id": 3,
@@ -21,7 +21,7 @@
   "lastname": "Rojas",
   "email": "rafa@rafa.com",
   "password": "$2b$10$Zsf8OXKQCODNqL/iFf8yyeVkAxxtD1TiDvLvZtd/etXouLFvZNdLa",
-  "image": "avatar-1592081335322.jpg"
+  "image": "avatar-1592074918943.jpg"
  },
  {
   "id": 4,
@@ -29,7 +29,7 @@
   "lastname": "José",
   "email": "jose@jose.com",
   "password": "$2b$10$hmc.jMB.Sn9QXGI1nsPdieUrHCTJ951/6BQXoob2LIT2Q7MLUSEoO",
-  "image": "avatar-1592081549323.jpg"
+  "image": "avatar-1592074918943.jpg"
  },
  {
   "id": 5,
@@ -46,5 +46,13 @@
   "email": "lasole@gmail.com",
   "password": "$2b$10$Q5rJPAjSvUORHKw9jdEoUOZd/xw4XL72Sm7w4vRPqHNLVscC0cXJG",
   "image": "morgado.jpg"
+ },
+ {
+  "id": 7,
+  "name": "1",
+  "lastname": "2",
+  "email": "asd",
+  "password": "$2b$10$SBGDA7lLBLxTj8vhTNOs4eCs1O/4InAQfQOJ38SjyEfltgo.JJXTK",
+  "image": "image-1592179031108.jpg"
  }
 ]

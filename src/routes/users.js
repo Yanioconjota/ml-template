@@ -4,11 +4,12 @@ const router = express.Router();
 const multer = require('multer');
 const path = require('path');
 const { check, validationResult, body } = require('express-validator');
+const loggedUser = require('../middlewares/loggedUser');
 
 // ************ Controller Require ************
 const usersController = require('../controllers/usersController');
 
-const logsMiddleware = require('../middlewares/logsDbMiddleware'); // Middleware de logs en ciertas rutas
+const logsMiddleware = require('../middlewares/logsDbMiddleware'); // Middleware de logs en 
 
 let storage = multer.diskStorage({
   destination: function (req, file, cb) {
@@ -23,7 +24,7 @@ let upload = multer({
   storage: storage
 });
 
-router.get('/profile/:userId', usersController.profile); /* GET - user profile */
+router.get('/profile/:userId', loggedUser,usersController.profile); /* GET - user profile */
 
 /*** CREATE USER ***/
 router.get('/register', usersController.create); /* GET - Form to create */
